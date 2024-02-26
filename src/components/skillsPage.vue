@@ -77,10 +77,10 @@ export default {
     return {
       list: ["Photography", "Drawing", "Editing", "Code"],
       listImg: [
-        { skill: "Photography", src: "/public/skillsPhotography.jpeg" },
-        { skill: "Drawing", src: "/public/skillsDrawing.jpeg" },
-        { skill: "Editing", src: "/public/skillsEditing.jpeg" },
-        { skill: "Code", src: "/public/skillsCode.jpeg" },
+        { skill: "Photography", src: "../public/skillsPhotography.jpeg" },
+        { skill: "Drawing", src: "../public/skillsDrawing.jpeg" },
+        { skill: "Editing", src: "../public/skillsEditing.jpeg" },
+        { skill: "Code", src: "../public/skillsCode.jpeg" },
       ],
 
       selectedSkill: null,
