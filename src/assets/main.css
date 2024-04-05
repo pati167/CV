@@ -19,8 +19,7 @@ a,
   body {
     display: flex;
     place-items: center;
-    background-color: #f2d7d9;
-    background-image: linear-gradient(#f2d7d9, #c0b8d1);
+    background-color: #f6f1f1;
   }
 
   #app {

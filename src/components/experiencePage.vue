@@ -112,12 +112,4 @@
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      githubImgPath: "/github-logo.png",
-    };
-  },
-};
-</script>
+
