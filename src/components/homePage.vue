@@ -1,14 +1,7 @@
 <template>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
   <div class="homeText">
-    <h1 class="patriciaGomes">Patrícia Gomes</h1>
+    <h2 class="frontend">Front-End Developer</h2>
+    <h1 class="patriciaGomes">PATRÍCIA GOMES</h1>
   </div>
 </template>
 
@@ -19,17 +12,29 @@ export default {
   },
 };
 </script>
-
 <style>
 .homeText {
-  position: fixed;
+  position: absolute;
+  bottom: 150px;
+  left: 150px;
 }
+
+.frontend {
+  position: relative;
+  top: 50px;
+  font-size: 32px;
+  color: #27374d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .patriciaGomes {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 100px;
-  color: #b25068;
-  font-family: "Raleway", sans-serif;
+  position: relative;
+  font-size: 128px;
+  color: #526d82;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 </style>

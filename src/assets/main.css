@@ -28,3 +28,10 @@ a,
     padding: 0 2rem;
   }
 }
+
+@font-face {
+  font-family: "Merriweather-Bold.ttf";
+  src: url("@/assets/fonts/Merriweather-Bold.ttf") format("truetype");
+  font-family: "Montserrat-Regular.ttf";
+  src: url("@/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}

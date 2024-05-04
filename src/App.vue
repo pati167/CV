@@ -1,5 +1,5 @@
 <template>
-  <Navbar @navigate="navigateToPage"></Navbar>
+  <Navbar :showIcons="showNavbarIcons" @navigate="navigateToPage"></Navbar>
   <component :is="currentPage"></component>
 </template>
 
@@ -8,12 +8,14 @@ import HomePage from "./components/homePage.vue";
 import AboutPage from "./components/aboutPage.vue";
 import SkillsPage from "./components/skillsPage.vue";
 import ExperiencePage from "./components/experiencePage.vue";
+import ContactPage from "./components/contactPage.vue";
 import Navbar from "./components/navbar.vue";
 
 export default {
   data() {
     return {
       currentPage: HomePage,
+      showNavbarIcons: true,
     };
   },
   components: {
@@ -22,6 +24,7 @@ export default {
     AboutPage,
     SkillsPage,
     ExperiencePage,
+    ContactPage,
   },
   methods: {
     navigateToPage(pageName) {
@@ -38,8 +41,18 @@ export default {
         case "experience":
           this.currentPage = ExperiencePage;
           break;
+        case "contact":
+          this.currentPage = ContactPage;
+          break;
       }
     },
+    updateNavbarIcons() {
+      this.showNavbarIcons = this.currentPage !== "contact";
+      console.log("showNavbarIcons:", this.showNavbarIcons);
+    },
+  },
+  created() {
+    this.updateNavbarIcons();
   },
 };
 </script>
